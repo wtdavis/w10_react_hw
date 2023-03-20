@@ -1,7 +1,7 @@
-import Showcase from './Showcase';
-import BaseStats from './BaseStats';
-import './App.css';
-import {PokeMoves} from "./PokeMoves.js";
+import Showcase from "./Showcase";
+import BaseStats from "./BaseStats";
+import "./App.css";
+import { PokeMoves } from "./PokeMoves.js";
 
 function App() {
   const baseStats = {
@@ -10,10 +10,9 @@ function App() {
     defense: 48,
     spAttack: 65,
     spDef: 66,
-    speed: 47
+    speed: 47,
   };
-
-  reactDOM.render(PokeMoves, document.getElementById('root'))
+  const render = ReactDOM.render(PokeMoves, document.getElementById("root"));
 
   const handleClick = () => {
     alert(
@@ -22,7 +21,7 @@ function App() {
   };
 
   return (
-    <div className='main-wrapper background'>
+    <div className="main-wrapper background">
       <Showcase />
       <BaseStats clicker={handleClick} stats={baseStats} />
     </div>
