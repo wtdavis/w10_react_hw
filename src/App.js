@@ -12,7 +12,6 @@ function App() {
     spDef: 66,
     speed: 47,
   };
-  const render = ReactDOM.render(PokeMoves, document.getElementById("root"));
 
   const handleClick = () => {
     alert(
@@ -24,6 +23,8 @@ function App() {
     <div className="main-wrapper background">
       <Showcase />
       <BaseStats clicker={handleClick} stats={baseStats} />
+      <PokeMoves />
+      {/* <PokeMoveCard key={item.id} /> */}
     </div>
   );
 }
