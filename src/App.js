@@ -1,6 +1,7 @@
 import Showcase from './Showcase';
 import BaseStats from './BaseStats';
 import './App.css';
+import {PokeMoves} from "./PokeMoves.js";
 
 function App() {
   const baseStats = {
@@ -11,6 +12,8 @@ function App() {
     spDef: 66,
     speed: 47
   };
+
+  reactDOM.render(PokeMoves, document.getElementById('root'))
 
   const handleClick = () => {
     alert(
